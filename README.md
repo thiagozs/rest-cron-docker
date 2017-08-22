@@ -1,16 +1,16 @@
-Rest Cronjob with Golang
+Rest Cronjob Golang Docker
 ---
 
 Clone the repository. And follow the commands below.
 
 Create de image.
 ```sh
-sudo docker build -t inviron/rest-cronjob:1.0.0 .
+sudo docker build -t thiagozs/rest-cron-docker:1.0.0 .
 ```
 
 Run image.
 ```sh
-sudo docker run -d --restart=always --name=cronjob -p 8011:8011 -t inviron/rest-cronjob:1.0.0
+sudo docker run -d --restart=always --name=cronjob -p 8011:8011 -t thiagozs/rest-cron-docker:1.0.0
 ```
 
 ## BoltDB or Redis
